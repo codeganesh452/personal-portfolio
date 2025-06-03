@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gana's Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="path/to/favicon.ico" />
+
+  <script src="https://kit.fontawesome.com/288b7dcb9f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!---------------------header-------------------->
+  <header>
+ <nav>
+    <div class="logo">Portfolio</div>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  </header>
+<!----------------------------home----------------------------->
+  <section id="home">
+  <div class="box">
+    <div class="container2">
+      <div class="hero">
+      <h1>Hello, I’m <span>GANESH</span></h1>
+      <p class="role1">Frontend Developer</p>
+       <p class="role2">Hi, I'm Ganesh, Front-end Developer, Passionate about creating wonderful and interactive websites.I'm
+                working in web development and Design. I enjoy creating beautiful and intuitive web designs using Html
+                css and make them interactive with Javascript.
+                <span class="animate" style="--i:4;"></span>
+            </p>
+      <!-- <p class="role2">I am a passionate frontend developer skilled in HTML, CSS, JavaScript, and Bootstrap. I love building clean, user-friendly websites.</p> -->
+    </div>
+    <div class="image">
+       <img src="pics/ganapic.png" alt="Ganesh's profile pic ">
+    </div>
+    </div>
+    
+
+  </div>
+   
+  </section>
+<!---------------------------------about---------------------------------->
+  <section id="about">
+  <div class="container">
+     <div class="col1">
+        <img src="pics/1697618590696.jpg" alt="Gana about pic">
+    </div>
+    <div class="col2">
+        <h2>About Me</h2>
+        <p>I’m a final-year BTech student specializing in front-end development and Java.
+         With skills in HTML, CSS, JavaScript, and Bootstrap, I create clean, responsive web designs. 
+         Currently, I'm taking on a 90-day DSA challenge to deepen my coding expertise,
+         while recent workshops in AI and ethical hacking have expanded my tech toolkit.
+         I’m driven by curiosity and a passion for building user-centered, efficient solutions.</p>    
+    <div class="tab-titles">
+      <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+      <p class="tab-links" onclick="opentab('education', event)">Education</p>
+    </div>
+
+       <div class="tab-contents active-link active-tab" id="experience">
+         <ul>
+           <li><span>2025 - Present</span><br>Frontend Intern at Codetech</li>
+         </ul>
+       </div>
+       <div class="tab-contents" id="education">
+         <ul>
+           <li><span>2021 - 2025</span><br>B.Tech in Computer Science-cyber security</li>
+            <li><span>college</span><br>Avn Institute of Engineering and Technology</li>
+         </ul>
+       </div>
+   </div>
+  </div>
+
+  </section>
+<!---------------------------------skills-------------------->
+  <section id="skills">
+    <h2>Skills</h2>
+  <div class="skills">
+      
+          <div class="skill">
+            <p>HTML</p>
+            <div class="bar"><div class="fill" style="width:85%;">85%</div></div>
+          </div>
+          <div class="skill">
+            <p>CSS</p>
+            <div class="bar"><div class="fill" style="width:85%;">85%</div></div>
+          </div>
+          <div class="skill">
+            <p>JavaScript</p>
+            <div class="bar"><div class="fill" style="width:80%;">80%</div></div>
+          </div>
+          <div class="skill">
+            <p>Java</p>
+            <div class="bar"><div class="fill" style="width:85%;">85%</div></div>
+          </div>
+          <div class="skill">
+            <p>SQL</p>
+            <div class="bar"><div class="fill" style="width:90%;">90%</div></div>
+          </div>
+  </div>
+  
+  </section>
+<!---------------------------projects----------------->
+  <section id="projects">
+   <div class="bigbox">
+       <h2 class="h2">Projects</h2>
+      <div class="projects">
+         <div class="project1">
+           <h3>Portfolio Website</h3>
+           <img src="pics/White Minimalist Creative Portfolio Presentation.jpg" alt="">
+           <p>A personal website made using HTML, CSS, and JS with smooth animations.</p>
+           <a href="#">View Project</a>
+         </div>
+         <div class="project2">
+           <h3>Text To Voice</h3>
+           <img src="pics/Text to Speech - Social - 1024x512.png" alt="">
+           <p>Created a no-code app using ChatGPT, Lovable, and ElevenLabs to convert text into speech with voice/language selection, playback, and download features.</p>
+           <a href="#">View Project</a>
+         </div>
+      </div>
+   </div>
+  </section>
+<!----------------------contact------------------->
+
+<div id="contact">
+ <div class="contact-all">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i>ganeshteja1616@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9515611452</p>
+            <div class="social-icons">
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <a href="pics/frontend_resume[1].docx" download class="btn2"><button>Download Cv</button></a>
+        </div>
+        <div class="contact-right">
+               <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="your name" required>
+                <input type="email" name="email" placeholder="your email" required>
+                <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+               </form>
+               <span id="msg"></span>
+        </div>
+    </div>
+ </div>
+</div>
+<!--------------------footer------------------>
+  <footer>
+    <p class="footer">© 2025 Gana | All rights reserved.</p>
+  </footer>
+<!----------------------------script----------------->
+ <script>
+    const menuIcon = document.getElementById('menu-icon');
+    const navLinks = document.getElementById('nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+
+    // Close the menu when any link is clicked
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>
